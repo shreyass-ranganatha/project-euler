@@ -33,12 +33,12 @@ def multiply(ar):
 def main():
     ar = []
     for i in range(0, len(s)):
-            ar.append(
-                multiply((int(_) for _ in tuple(s[i:i+13])))
-            )
+        ar.append(
+            multiply((int(_) for _ in tuple(s[i:i+13])))
+        )
 
-    print(max(ar))
+    return max(ar)
 
 
 if __name__ == '__main__':
-    main()
+    print(main())

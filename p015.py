@@ -11,5 +11,9 @@ def getnpaths(a, b):
         (getnpaths(a, b-1) if b-1 >= 0 else 0)
 
 
+def main():
+    return getnpaths(20, 20)
+
+
 if __name__ == '__main__':
-    print(getnpaths(20, 20))
+    print(main())

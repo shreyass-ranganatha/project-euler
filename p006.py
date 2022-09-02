@@ -20,5 +20,6 @@ def main():
     n = 100
     return square_of_sum(n) - sum_of_squares(n)
 
+
 if __name__ == '__main__':
     print(main())

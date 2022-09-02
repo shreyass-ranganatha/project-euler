@@ -6,7 +6,7 @@ def countseq(n):
     if n == 1:
         return 1
 
-    return 1 + countseq(n//2 if n%2 == 0 else (3*n + 1))
+    return 1 + countseq(n//2 if n % 2 == 0 else (3*n + 1))
 
 
 def main():
@@ -15,7 +15,8 @@ def main():
         if (c := countseq(i)) > mx:
             mx, ix = c, i
 
-    print(ix)
+    return ix
+
 
 if __name__ == '__main__':
-    main()
+    print(main())

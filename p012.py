@@ -6,7 +6,7 @@ def ndivs(n):
     r = 0
 
     for i in range(1, int(math.sqrt(n)) + 1):
-        if n%i == 0:
+        if n % i == 0:
             r += (1 if n/i == i else 2)
     return r
 
@@ -26,16 +26,21 @@ def trinumbers():
         i += 1
 
 
-tris = trinumbers()
+def main():
+    tris = trinumbers()
 
-mx = 0
-while 1:
-    tr = next(tris)
-    nd = ndivs(tr)
+    mx, rs = 0, []
+    while 1:
+        tr = next(tris)
+        nd = ndivs(tr)
 
-    if nd > mx:
-        mx = nd
-        print(tr, mx)
+        if nd > mx:
+            mx = nd
+            rs.append((tr, mx))
 
-    if nd >= 500:
-        break
+        if nd >= 500:
+            return rs
+
+
+if __name__ == '__main__':
+    print(main())

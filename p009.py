@@ -9,12 +9,15 @@ def gettrips():
                 yield i, j, int(c)
 
 
-if __name__ == '__main__':
+def main():
     gt = gettrips()
 
     while 1:
         a, b, c = next(gt)
 
-        if sum((a,b,c)) == 1000:
-            print(a * b * c)
-            break
+        if a + b + c == 1000:
+            return a * b * c
+
+
+if __name__ == '__main__':
+    print(main())

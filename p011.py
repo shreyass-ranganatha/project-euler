@@ -53,7 +53,6 @@ def main():
                 break
             rs.append(multiply(ar_r[i][j:j+4]))
 
-
     # # down
     # ar_d = unzip(tuple(tuple(ar[j][i] for j in range(20)) for i in range(20)))
     # for i in range(len(ar_d)):
@@ -70,7 +69,8 @@ def main():
         for j in range(20):
             try:
                 rs.append(
-                    multiply((ar[i][j], ar[i+1][j+1], ar[i+2][j+2], ar[i+3][j+3]))
+                    multiply((ar[i][j], ar[i+1][j+1],
+                             ar[i+2][j+2], ar[i+3][j+3]))
                 )
             except:
                 pass
@@ -79,7 +79,8 @@ def main():
         for j in range(20):
             try:
                 rs.append(
-                    multiply((ar[i][j], ar[i-1][j+1], ar[i-2][j+2], ar[i-3][j+3]))
+                    multiply((ar[i][j], ar[i-1][j+1],
+                             ar[i-2][j+2], ar[i-3][j+3]))
                 )
             except:
                 pass
@@ -87,8 +88,8 @@ def main():
     assert 1788696 in rs
     assert (28 * 75 * 73 * 12) in rs
 
-    print(max(rs))
+    return max(rs)
 
 
 if __name__ == '__main__':
-    main()
+    print(main())

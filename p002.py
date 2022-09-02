@@ -2,9 +2,9 @@
 
 def sums_of_fibonacci(n, a=1, b=2):
     if a+b >= n:
-        return (a if a%2 == 0 else 0) + (b if b%2 == 0 else 0)
+        return (a if a % 2 == 0 else 0) + (b if b % 2 == 0 else 0)
 
-    return (a if a%2 == 0 else 0) + sums_of_fibonacci(n, b, a+b)
+    return (a if a % 2 == 0 else 0) + sums_of_fibonacci(n, b, a+b)
 
 
 def main():

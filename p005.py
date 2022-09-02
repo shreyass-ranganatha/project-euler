@@ -7,7 +7,7 @@ def isprime(n):
         raise ValueError("1 isn't prime nor composite")
 
     for i in range(2, n):
-        if n%i == 0:
+        if n % i == 0:
             return 0
     return 1
 
@@ -15,7 +15,7 @@ def isprime(n):
 def ntimes(a, b):
     r = []
     while 1:
-        if not a%b == 0:
+        if not a % b == 0:
             break
 
         a //= b
@@ -61,6 +61,10 @@ def get_smallest_number_under(n):
 
     return rs
 
+
+def main():
+    return get_smallest_number_under(20)
+
+
 if __name__ == '__main__':
-    # print(get_prime_factors(9, getprimes()))
-    print(get_smallest_number_under(20))
+    print(main())

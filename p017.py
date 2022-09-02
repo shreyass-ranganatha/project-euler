@@ -69,5 +69,11 @@ def sums_of(n):
 
     return sm
 
-print(sums_of(1000)) # should be 21124
-# print(towords(915))
+
+def main():
+    return sums_of(1000)  # should be 21124
+    # print(towords(915))
+
+
+if __name__ == '__main__':
+    print(main())

@@ -7,7 +7,7 @@ def isprime(n):
         raise ValueError("1 is neither prime nor composite")
 
     for i in range(2, n):
-        if n%i == 0:
+        if n % i == 0:
             return 0
     return 1
 
@@ -25,7 +25,7 @@ def getprimes():
 def ntimes(a, b):
     r = []
     while 1:
-        if not a%b == 0:
+        if not a % b == 0:
             break
 
         a //= b
