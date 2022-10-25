@@ -4,8 +4,8 @@
 ## Commit Message
 
 *Codes*
-- `m`. Modify
-- `p`. Problems \[Solved\]
+- `m`: modify
+- `p`: problems \(solved\)
 
-*Usage*
-- \<Code>\[\<Range>]
+*Format*
+- **code**\[*range*]
