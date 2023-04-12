@@ -13,6 +13,7 @@ ranks = (
 )
 cardvalues = '23456789TJQKA'
 
+
 def rank(cards):
     suits = [_[1] for _ in cards]
     ssuits = set(suits)
